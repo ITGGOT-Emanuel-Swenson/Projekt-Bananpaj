@@ -40,6 +40,8 @@
     }
 
     main{
+        display: flex;
+        flex-direction: column;
         width: 100%;
         background-color: red;
         flex-grow: 16;
@@ -47,7 +49,9 @@
     }
 
     .main_text{
-
+        background-color: #ff0094;
+        width: 100px;
+        height: 100p;
     }
 
     .bildspel{
