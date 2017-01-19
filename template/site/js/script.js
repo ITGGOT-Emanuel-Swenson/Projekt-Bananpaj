@@ -10,7 +10,8 @@ function gallery() {
 }
 
 function chngImg() {
-    count = count + 1
+    console.log(count) ;
+    count = count + 1 ;
     if (count == 5) {
         count = 1
     }
