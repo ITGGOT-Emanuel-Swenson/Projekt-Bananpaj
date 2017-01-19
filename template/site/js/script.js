@@ -1,16 +1,19 @@
 /**
  * Created by gondola on 1/17/17.
  */
-function chngimg(b) {
-    var logo = document.getElementById('gall');
-    logo.src = b;
 
+var count = 0
+var nIntervId;
+
+function gallery() {
+    nIntervId = setInterval(chngImg, 1000);
 }
-function gallery(e) {
-    var logo = document.getElementById('gall');
-    for (i = 0; i < 4; i++) {
-    file = "./img/" + i + ".jpg" ;
 
-    setInterval(function(){ chngimg(file); }, 3000);
+function chngImg() {
+    count = count + 1
+    if (count == 5) {
+        count = 1
     }
-}
+    var oElem = document.getElementById("gall");
+    oElem.src = "./img/" + count + ".jpg"
+    }
